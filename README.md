@@ -9,7 +9,7 @@ Learning robust and fine-grained entity representations is essential for enhanci
 ## Overview
 
 <p align="center">
-   <img src="Prism.png" width="900">
+   <img src="PrismF.png" width="900">
 </p>
 
 ## Dependencies
