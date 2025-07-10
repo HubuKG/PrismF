@@ -9,25 +9,29 @@ Learning robust and fine-grained entity representations is essential for enhanci
 ## Overview
 
 <p align="center">
-   <img src="HiMod.png" width="900">
+   <img src="Prism.png" width="900">
 </p>
 
 ## Dependencies
 
-- torch == 1.12.1
-- torch_scatter == 2.0.9
-- numpy == 1.21.6
-- scipy == 1.10.1
+-  Python==3.9
+- numpy==1.24.2
+- scikit_learn==1.2.2
+- torch==2.0.0
+- tqdm==4.64.1
+- Maybe other library version also works.
+
 
 ## Data
 
-The datasets consist of WN18RR, FB15K-237, and NELL-995, each dataset was split into four unique training/testing configurations, resulting in 12 experimental settings.
+The multi-model embedding of MMKGs are too large so you should download them from the [Google Drive Link](https://drive.google.com/file/d/1nRHdeWiVi9d_FKli3x7sO87ARasad39w/view?usp=sharing). Please unzip the embedding files and put them in the corresponding path in `datasets/`.
+
 
 ## Train
-The full training scripts can be found in [reproduce.sh]. For example, training on `WN18RR v1` dataset:
+The full training scripts can be found in `scripts/train.sh`. For example, training on MKG-Y dataset:
 
-##### WN18RR-v1 dataset
+##### MKG-Y dataset
 
 ```
-python train.py --data_path ./data/WN18RR_v1
+python train.py --cuda 0 --lr 0.001 --mu 0.001 --dim 200 --dataset MKG-Y --epochs 2000
 ```
