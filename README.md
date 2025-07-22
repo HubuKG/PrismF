@@ -1,5 +1,5 @@
 # PrismF
-# More Perspectives, Stronger Signals: Multi-perspective enhancement and Progressive fusion for Multimodal Knowledge Graph Completion
+# More Perspectives, Stronger Signals: Multi-Perspective Enhancement and Progressive Fusion for Multimodal Knowledge Graph Completion
 
 
 ## Introduction
